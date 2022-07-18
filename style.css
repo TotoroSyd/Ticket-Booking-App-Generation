@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    background-image: url(https://images.unsplash.com/photo-1551019129-454ff1064ae6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+    color: #fefbf6;
+    line-height: 2;
+    display: flex;
+    justify-content: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  
+  .container {
+    width: 80%;
+    height: fit-content;
+    color: #293462;
+    background-color: white;
+    opacity: 0.8;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  
+  header {
+    padding: 20px;
+    background-color: #839aa8;
+    color: #fff;
+    width: 100%;
+    position: ;
+  }
+  form {
+    width:500px;
+  }
+
+  
+  .passenger {
+    display:flex;
+    flex-direction: column;
+    
+  }
+  .passenger input {
+    width: 30%;
+  }
+  #p1-age, #p2-age {width: 10%}
+  .submission {
+    padding-top: 20px;
+  }
+  .date {
+    display: flex;
+    flex-direction: column;
+  }
+  .date input {
+    width: 20%;
+  }
+
+  .btn {
+    width: 20%;
+    padding: 10px;
+    background: green;
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: #53bf9d;
+  }
+  .submission {
+    padding-bottom: 20px;
+  }
+  
+  .message {
+    color:red;
+    font-size: 11px;
+  }
+  .item-section{
+    display: flex;
+    height: 30px;
+    column-gap: 10px;
+    padding: 4px 4px;
+    /* width: 100%; */
+  }
+
+  .gender {
+    padding: 4px 4px;
+  }

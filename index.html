@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Future Airline</h1>
+      </header>
+      <main>
+        <form>
+          <h1>Booking Form</h1>
+          <section class="item-section">
+            <label for="one-way">One-way</label>
+            <input type="radio" value="one-way" id="one-way" name="one-way" />
+            <label for="return">Return</label>
+            <input
+              type="radio"
+              value="return"
+              id="return"
+              name="return"
+              checked
+            />
+          </section>
+          <section class="item-section">
+            <label for="from">From</label>
+            <select id="from" name="from" required>
+              <option value="The Earth">The Earth</option>
+              <option value="The Moon">The Moon</option>
+              <option value="Mars">Mars</option>
+              <option value="Venus">Venus</option>
+            </select>
+          </section>
+          <section class="item-section">
+            <label for="to">To</label>
+            <select id="to" name="to" required>
+              <option value="The Earth">The Earth</option>
+              <option value="The Moon">The Moon</option>
+              <option value="Mars">Mars</option>
+              <option value="Venus">Venus</option>
+            </select>
+          </section>
+          <section class="passenger">
+            <div class="item-section">
+              <label for="p1-name">Passenger 1's Name</label>
+
+              <input type="text" required id="p1-name" name="p1-name" />
+              <p class="message" id="invalid-name-1" style="display: none">
+                Please provide name
+              </p>
+            </div>
+            <div class="item-section">
+              <label for="p1-age">Passenger 1's Age</label>
+              <input type="number" required id="p1-age" name="p1-age" />
+            </div>
+
+            <div class="gender">
+              <label for="p1-male">Male</label>
+              <input type="radio" value="male" id="p1-male" name="p1-male" />
+
+              <label for="p1-female">Female</label>
+              <input
+                type="radio"
+                value="female"
+                id="p1-female"
+                name="p1-female"
+              />
+            </div>
+          </section>
+          <section class="passenger">
+            <div class="item-section">
+              <label for="p2-name">Passenger 2's Name</label>
+              <input type="text" required id="p2-name" name="p2-name" />
+              <p class="message" id="invalid-name-2" style="display: none">
+                Please provide name
+              </p>
+            </div>
+            <div class="item-section">
+              <label for="p2-age">Passenger 2's Age</label>
+              <input type="number" required id="p2-age" name="p2-age" />
+            </div>
+            <div class="gender">
+              <label for="p2-male">Male</label>
+              <input type="radio" value="male" id="p2-male" name="p2-male" />
+
+              <label for="p2-female">Female</label>
+              <input
+                type="radio"
+                value="female"
+                id="p2-female"
+                name="p2-female"
+              />
+            </div>
+          </section>
+          <section class="item-section">
+            <section>
+              <label for="departure-date">Departure Date</label>
+              <input
+                type="date"
+                required
+                id="departure-date"
+                name="departure-date"
+              />
+            </section>
+            <section
+              id="return-date-section"
+              style="display: block"
+              class="item-section"
+            >
+              <label for="return-date">Return Date</label>
+              <input type="date" required id="return-date" name="return-date" />
+            </section>
+          </section>
+
+          <section class="item-section">
+            <label for="email">Email</label>
+            <input name="email" id="email" type="email" required />
+          </section>
+          <section class="item-section">
+            <label for="mobile">Mobile</label>
+            <input name="mobile" id="mobile" type="text" required />
+          </section>
+          <section class="item-section">
+            <label for="address">Billing Address</label>
+            <textarea id="address" name="address" rows="3" cols="40"></textarea>
+          </section>
+        </form>
+        <section class="submission">
+          <button type="submit" value="submit" class="btn" id="submit-button">
+            Submit
+          </button>
+        </section>
+      </main>
+    </div>
+  </body>
+  <script src="./execution.js"></script>
+</html>
